@@ -14,6 +14,8 @@ const myPokemons = [
     }
 ];
 
+// myPokemons array has the memory address #123
+
 const newPokemon = {
     name: 'Mewtwo',
     type: 'Psychic',
@@ -22,7 +24,7 @@ const newPokemon = {
 
 console.log('myPokemons (Original): ', myPokemons);
 
-// myPokemons array is passed by reference
+// myPokemons array is passed by reference. addPokemonImpure receives a pointer to #123
 const updatedPokemons = addPokemonImpure(myPokemons, newPokemon);
 
 console.log('updatedPokemons: ', updatedPokemons);
